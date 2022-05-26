@@ -12,9 +12,6 @@ model = pickle.load(open('random_forest_regression_model.pkl', 'rb'))
 @app.route('/',methods=['GET'])
 def Home():
     return render_template('main.html')
-@app.route('/CarConfigurator',methods=['GET'])
-def SecondPage():
-    return render_template('car.html')
 @app.route('/PowerBi',methods=['GET'])
 def ThirdPage():
     return render_template('PowerBi.html')
